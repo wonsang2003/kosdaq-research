@@ -1,0 +1,57 @@
+# The repository argues that a claim without a reproduction is an assertion.
+# This runs the reproduction on a machine that is not the author's.
+#
+# ALLOW_MISSING_PRODUCTION=1 is required here and nowhere else: a handful of tests
+# compare this code against the live trading system, which is not in the clone.
+# Without the flag those tests fail rather than skip — deliberately, so a lost
+# comparison is visible instead of silent. CI is the one environment where the
+# absence is expected, so it opts out explicitly.
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      ALLOW_MISSING_PRODUCTION: "1"
+      # The redaction blocklist is deliberately not in the clone — a test that
+      # asserts a value is absent would publish it. Its own guard fails rather
+      # than skips, so the absence has to be declared here.
+      ALLOW_MISSING_BLOCKLIST: "1"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install pinned dependencies
+        run: pip install -r requirements.txt
+
+      - name: Test suite
+        run: python -m pytest -q
+
+      - name: Test suite under a non-Korean timezone
+        # The system reasons about a market in Asia/Seoul from a machine that may be
+        # anywhere. A suite that only passes in one timezone is a latent bug.
+        run: TZ=UTC python -m pytest -q
+
+      - name: End-to-end replay reaches a verdict
+        # The command the README tells a reader to type. If it stops working, the
+        # first thing a reviewer does stops working.
+        run: python -m src.app.cli backtest | tee /tmp/run.txt
+
+      - name: The verdict is the refuted one
+        # The shipped reference strategy is a documented failure. A green run that
+        # reported a *winner* would mean something had been quietly swapped in.
+        run: grep -q "LOSES" /tmp/run.txt
+
+      - name: Autopsy replay (stdlib only)
+        run: python scripts/replay_hour_scan.py

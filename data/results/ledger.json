@@ -1,0 +1,315 @@
+[
+  {
+    "ts": "2026-06-30T02:20:07+00:00",
+    "key": "h_001",
+    "name": "turnover_top10",
+    "signal": "sig_turnover",
+    "survives_alpha": true,
+    "retail_tradable": false,
+    "killed_by": [],
+    "excess": 0.1254,
+    "excess_t": 5.12,
+    "long_net": -0.1178,
+    "beta": 0.778,
+    "decaying": false,
+    "deflated_t_required": 2.91,
+    "oos": {
+      "excess": -0.0049,
+      "excess_t": -0.13,
+      "long_net": -0.2083,
+      "n": 846
+    }
+  },
+  {
+    "ts": "2026-06-30T02:20:40+00:00",
+    "key": "h_002",
+    "name": "turnover_top20",
+    "signal": "sig_turnover",
+    "survives_alpha": true,
+    "retail_tradable": false,
+    "killed_by": [],
+    "excess": 0.1193,
+    "excess_t": 6.89,
+    "long_net": -0.1239,
+    "beta": 0.844,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": {
+      "excess": 0.0203,
+      "excess_t": 0.7,
+      "long_net": -0.183,
+      "n": 846
+    }
+  },
+  {
+    "ts": "2026-06-30T02:21:12+00:00",
+    "key": "h_003",
+    "name": "turnover_top50",
+    "signal": "sig_turnover",
+    "survives_alpha": true,
+    "retail_tradable": false,
+    "killed_by": [],
+    "excess": 0.1203,
+    "excess_t": 11.49,
+    "long_net": -0.1229,
+    "beta": 0.924,
+    "decaying": false,
+    "deflated_t_required": 2.91,
+    "oos": {
+      "excess": 0.0347,
+      "excess_t": 1.93,
+      "long_net": -0.1686,
+      "n": 846
+    }
+  },
+  {
+    "ts": "2026-06-30T02:21:44+00:00",
+    "key": "h_004",
+    "name": "strong_close",
+    "signal": "sig_close_strength",
+    "survives_alpha": true,
+    "retail_tradable": false,
+    "killed_by": [],
+    "excess": 0.078,
+    "excess_t": 5.22,
+    "long_net": -0.1659,
+    "beta": 0.837,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": {
+      "excess": -0.0234,
+      "excess_t": -1.09,
+      "long_net": -0.227,
+      "n": 846
+    }
+  },
+  {
+    "ts": "2026-06-30T02:22:16+00:00",
+    "key": "h_005",
+    "name": "weak_close",
+    "signal": "sig_close_strength",
+    "survives_alpha": true,
+    "retail_tradable": false,
+    "killed_by": [],
+    "excess": 0.0433,
+    "excess_t": 4.45,
+    "long_net": -0.2007,
+    "beta": 0.964,
+    "decaying": false,
+    "deflated_t_required": 2.91,
+    "oos": {
+      "excess": -0.0112,
+      "excess_t": -0.6,
+      "long_net": -0.2148,
+      "n": 846
+    }
+  },
+  {
+    "ts": "2026-06-30T02:22:46+00:00",
+    "key": "h_006",
+    "name": "momentum_cc",
+    "signal": "sig_cc",
+    "survives_alpha": true,
+    "retail_tradable": false,
+    "killed_by": [],
+    "excess": 0.187,
+    "excess_t": 8.64,
+    "long_net": -0.0562,
+    "beta": 0.765,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": {
+      "excess": 0.0901,
+      "excess_t": 2.51,
+      "long_net": -0.1132,
+      "n": 846
+    }
+  },
+  {
+    "ts": "2026-06-30T02:23:18+00:00",
+    "key": "h_007",
+    "name": "reversal_cc",
+    "signal": "sig_cc",
+    "survives_alpha": false,
+    "retail_tradable": false,
+    "killed_by": [
+      "placebo",
+      "random",
+      "walk_forward",
+      "deflated_significance"
+    ],
+    "excess": -0.0534,
+    "excess_t": -3.1,
+    "long_net": -0.2966,
+    "beta": 1.06,
+    "decaying": false,
+    "deflated_t_required": 2.91,
+    "oos": null
+  },
+  {
+    "ts": "2026-06-30T02:23:50+00:00",
+    "key": "h_008",
+    "name": "gap_up",
+    "signal": "sig_gap",
+    "survives_alpha": true,
+    "retail_tradable": false,
+    "killed_by": [],
+    "excess": 0.1503,
+    "excess_t": 7.66,
+    "long_net": -0.0929,
+    "beta": 0.819,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": {
+      "excess": 0.0205,
+      "excess_t": 0.58,
+      "long_net": -0.1828,
+      "n": 846
+    }
+  },
+  {
+    "ts": "2026-06-30T02:24:21+00:00",
+    "key": "h_009",
+    "name": "gap_down",
+    "signal": "sig_gap",
+    "survives_alpha": false,
+    "retail_tradable": false,
+    "killed_by": [
+      "placebo",
+      "random",
+      "walk_forward",
+      "deflated_significance"
+    ],
+    "excess": -0.0492,
+    "excess_t": -3.01,
+    "long_net": -0.2924,
+    "beta": 0.948,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": null
+  },
+  {
+    "ts": "2026-06-30T02:24:51+00:00",
+    "key": "h_010",
+    "name": "mom5",
+    "signal": "sig_mom5",
+    "survives_alpha": false,
+    "retail_tradable": false,
+    "killed_by": [
+      "walk_forward"
+    ],
+    "excess": 0.0678,
+    "excess_t": 3.3,
+    "long_net": -0.1768,
+    "beta": 0.763,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": null
+  },
+  {
+    "ts": "2026-06-30T02:25:21+00:00",
+    "key": "h_011",
+    "name": "hi_vol",
+    "signal": "sig_vol20",
+    "survives_alpha": false,
+    "retail_tradable": false,
+    "killed_by": [
+      "deflated_significance"
+    ],
+    "excess": 0.033,
+    "excess_t": 1.58,
+    "long_net": -0.2142,
+    "beta": 0.932,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": null
+  },
+  {
+    "ts": "2026-06-30T02:25:53+00:00",
+    "key": "h_012",
+    "name": "prev_on_reversal",
+    "signal": "sig_prev_overnight",
+    "survives_alpha": false,
+    "retail_tradable": false,
+    "killed_by": [
+      "placebo",
+      "random",
+      "walk_forward",
+      "deflated_significance"
+    ],
+    "excess": -0.0492,
+    "excess_t": -3.01,
+    "long_net": -0.2924,
+    "beta": 0.948,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": null
+  },
+  {
+    "ts": "2026-06-30T02:26:24+00:00",
+    "key": "h_013",
+    "name": "combo_turn_weakclose",
+    "signal": "sig_combo_turn_weakclose",
+    "survives_alpha": false,
+    "retail_tradable": false,
+    "killed_by": [
+      "placebo",
+      "random",
+      "walk_forward",
+      "deflated_significance"
+    ],
+    "excess": -0.1449,
+    "excess_t": -17.41,
+    "long_net": -0.3888,
+    "beta": 0.808,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": null
+  },
+  {
+    "ts": "2026-06-30T02:31:51+00:00",
+    "key": "h_014",
+    "name": "calm_quality_demo",
+    "signal": "sig_range_pct",
+    "survives_alpha": false,
+    "retail_tradable": false,
+    "killed_by": [
+      "placebo",
+      "random",
+      "walk_forward",
+      "deflated_significance"
+    ],
+    "excess": -0.061,
+    "excess_t": -7.79,
+    "long_net": -0.3043,
+    "beta": 0.754,
+    "decaying": true,
+    "deflated_t_required": 2.91,
+    "oos": {
+      "locked": "use finalize.py"
+    }
+  },
+  {
+    "ts": "2026-06-30T02:32:44+00:00",
+    "key": "h_015",
+    "name": "turnover_x_lowvol_demo",
+    "signal": "sig_combo_turnover_x_lowvol_demo",
+    "survives_alpha": false,
+    "retail_tradable": false,
+    "killed_by": [
+      "placebo",
+      "random",
+      "walk_forward",
+      "deflated_significance"
+    ],
+    "excess": -0.049,
+    "excess_t": -5.47,
+    "long_net": -0.2963,
+    "beta": 0.952,
+    "decaying": true,
+    "deflated_t_required": 2.94,
+    "oos": {
+      "locked": "use finalize.py"
+    }
+  }
+]

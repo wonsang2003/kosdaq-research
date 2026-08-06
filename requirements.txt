@@ -1,0 +1,12 @@
+# Pinned. An unpinned numpy/pyarrow pair ABI-crashes against the parquet files
+# shipped here — verified on this machine, where the base environment could not
+# import pandas at all. A reviewer whose first command tracebacks will not
+# believe anything that follows.
+#
+# Python 3.12
+numpy==2.2.6
+pandas==2.2.3
+pyarrow==18.1.0
+pydantic==2.12.5
+python-ulid==3.0.0
+pytest==8.3.4

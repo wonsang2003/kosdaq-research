@@ -1,0 +1,21 @@
+# --- secrets: never commit ---
+.env
+.env.*
+*.pem
+*.key
+credentials
+# --- raw / bulk data (aggregates only are versioned) ---
+data/raw/
+*.jsonl
+*.jsonl.gz
+*.gz
+# --- build / cache ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+# --- os ---
+.DS_Store

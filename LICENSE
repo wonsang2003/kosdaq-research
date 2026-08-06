@@ -1,0 +1,47 @@
+Copyright (c) 2026 Wonsang Chang. All rights reserved.
+
+This repository is published as a portfolio — a record of research, presented so
+that the author's work can be examined and judged. It is not open source, and it
+is not offered for use.
+
+PERMITTED
+
+  * Reading the contents of this repository.
+  * Cloning or downloading a copy for the sole purpose of evaluating the author,
+    including running the shipped commands locally to check that the results
+    reproduce.
+  * Quoting short excerpts, with attribution, for review or commentary.
+
+NOT PERMITTED without the author's prior written permission
+
+  * Copying, reproducing or redistributing this repository, or any substantial
+    part of it.
+  * Modifying it, or creating derivative works from it.
+  * Using it, in whole or in part, in any product, service, publication,
+    dataset, or machine-learning training corpus.
+  * Any commercial use.
+  * Removing or altering this notice.
+
+No licence, express or implied, is granted beyond the permissions stated above.
+No patent rights are granted, and nothing here transfers ownership of anything.
+
+To ask about any other use, contact the author through the GitHub account that
+owns this repository.
+
+THE CONTENTS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. THE AUTHOR SHALL NOT BE LIABLE FOR
+ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE CONTENTS OR THEIR USE.
+
+---
+
+NOTICE
+
+This repository is a research record. The documents report what was measured,
+including the results that failed, and the numbers in them describe historical
+samples rather than expected future returns. Most of the strategies documented
+here are recorded because they were refuted.
+
+Nothing here is investment advice, an offer, or a solicitation. The author is
+not a licensed investment adviser. Anyone acting on this material is doing their
+own research, at their own risk.
